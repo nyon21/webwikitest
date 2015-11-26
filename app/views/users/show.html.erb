@@ -1,0 +1,27 @@
+<%= form_for :user do |f| %>
+<p>
+	<strong>Name:</strong>
+	<%= @user.name %>
+</p>
+
+<p>
+	<strong>Last Name:</strong>
+	<%= @user.lastname %>
+</p>
+
+<p>
+	<strong>Email:</strong>
+	<%= @user.email %>
+</p>
+
+<p>
+	<strong>Password:</strong>
+	<%= @user.password %>
+</p>
+
+<p>
+	<strong>Aniversario:</strong>
+	<%= @user.birthDate %>
+</p>
+	<%= link_to 'Edit', edit_user_path(current_user.id) %>
+<% end %>

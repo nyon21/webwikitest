@@ -1,0 +1,9 @@
+<h1>Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+
+<%= form_for @post do |f| %>
+	<%= f.hidden_field :user_id, :value => current_user.id %>
+	
+	<%= f.text_field :title, :placeholder => "Title" %></br>
+	<%= f.submit  %>
+<% end %>

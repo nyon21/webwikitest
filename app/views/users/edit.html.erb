@@ -1,0 +1,8 @@
+<%= form_for(@user) do |f| %>
+	<%= f.text_field :name %></br>
+      	<%= f.text_field :lastname %></br>
+      	<%= f.email_field :email %></br>
+      	<%= f.password_field :password %></br>
+      	<%= f.date_field :birthDate %></br>
+      	<%= f.submit "Update", class: "btn-submit" %>
+<% end %>

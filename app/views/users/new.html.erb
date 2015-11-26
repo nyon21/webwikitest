@@ -1,0 +1,10 @@
+<%= form_for :user, url: users_path do |f| %>
+	<%= f.text_field :name, :placeholder => "Nome" %></br>
+      	<%= f.text_field :lastname, :placeholder => "Sobrenome" %></br>
+      	<%= f.email_field :email, :placeholder => "Email" %></br>
+      	<%= f.password_field :password, :placeholder => "Password" %></br>
+      	<%= f.date_field :birthDate, :placeholder => "Data de nascimento" %></br>
+      	<%= f.submit "Create an account", class: "btn-submit" %>
+<% end %>
+
+
